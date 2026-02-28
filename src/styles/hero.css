@@ -1,0 +1,56 @@
+/* =========================================
+   FACMP Hero Styling
+========================================= */
+
+.fac-hero {
+  background-color: var(--fac-bg-secondary);
+}
+
+.fac-btn-primary {
+  background-color: var(--fac-orange-500);
+  color: white;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--fac-radius-md);
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.fac-btn-primary:hover {
+  background-color: var(--fac-orange-600);
+  color: white;
+}
+
+.fac-btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--fac-border-light);
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--fac-radius-md);
+  transition: all 0.2s ease;
+}
+
+.fac-btn-outline:hover {
+  border-color: var(--fac-orange-500);
+  color: var(--fac-orange-500);
+}
+
+.fac-hero-visual {
+  position: relative;
+  min-height: 300px;
+}
+
+.fac-hero-glow {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, var(--fac-orange-100), transparent 70%);
+  top: -40px;
+  right: 20px;
+  z-index: 0;
+}
+
+.fac-hero-card {
+  position: relative;
+  background-color: white;
+  border-radius: var(--fac-radius-lg);
+  z-index: 1;
+}
