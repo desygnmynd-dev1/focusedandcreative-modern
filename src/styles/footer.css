@@ -1,0 +1,23 @@
+/* =========================================
+   FACMP Footer Styling
+========================================= */
+
+.fac-footer {
+  background-color: var(--fac-bg-primary);
+  border-top: 1px solid var(--fac-border-light);
+}
+
+.fac-footer hr {
+  border-color: var(--fac-border-light);
+  opacity: 1;
+}
+
+.fac-footer-link {
+  text-decoration: none;
+  color: var(--fac-text-primary);
+  transition: color 0.2s ease;
+}
+
+.fac-footer-link:hover {
+  color: var(--fac-orange-500);
+}
