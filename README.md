@@ -1,73 +1,50 @@
-# React + TypeScript + Vite
+# Focused & Creative Modernization Platform (FACMP) v2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FACMP v2 is a full modernization of the Focused & Creative website, rebuilt using a modern frontend architecture with React, Vite, and Bootstrap.
 
-Currently, two official plugins are available:
+This project follows structured Agile sprint execution and Git-based workflow to simulate real-world product delivery standards.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Project Goals
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Redesign UI with a modern startup product aesthetic
+- Establish a reusable design system
+- Implement scalable component architecture
+- Optimize performance and accessibility
+- Maintain structured sprint-based delivery
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧱 Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React (TypeScript)
+- Vite
+- Bootstrap 5
+- React Router
+- Git + GitHub (feature branching)
+- Jira (Sprint execution tracking)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🗂 Branch Strategy
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- `main` → Production-ready stable releases
+- `dev` → Active sprint integration branch
+- `feature/FACMP-#-story-name` → Individual story branches
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Example:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+feature/FACMP-5-design-tokens  
+feature/FACMP-9-hero-section  
+
+All features merge → `dev` → Pull Request → `main`
+
+---
+
+## 🏃 Running Locally
+
+Install dependencies:
+
+```bash
+npm install
