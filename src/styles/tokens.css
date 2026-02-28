@@ -1,0 +1,39 @@
+:root {
+  /* ==============================
+     Brand
+  ============================== */
+  --fac-orange-500: #f97316;
+  --fac-orange-600: #ea580c;
+  --fac-orange-100: #fff7ed;
+
+  /* ==============================
+     Backgrounds
+  ============================== */
+  --fac-bg-primary: #ffffff;
+  --fac-bg-secondary: #f8fafc;
+  --fac-bg-accent: #fff7ed;
+
+  /* ==============================
+     Text
+  ============================== */
+  --fac-text-primary: #111827;
+  --fac-text-secondary: #6b7280;
+  --fac-text-muted: #9ca3af;
+
+  /* ==============================
+     Borders
+  ============================== */
+  --fac-border-light: #e5e7eb;
+
+  /* ==============================
+     Radius
+  ============================== */
+  --fac-radius-sm: 8px;
+  --fac-radius-md: 12px;
+  --fac-radius-lg: 16px;
+
+  /* ==============================
+     Shadows
+  ============================== */
+  --fac-shadow-soft: 0 6px 24px rgba(0, 0, 0, 0.06);
+}
