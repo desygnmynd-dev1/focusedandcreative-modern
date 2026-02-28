@@ -1,25 +1,17 @@
+import Navbar from "./components/layout/Navbar";
+
 function App() {
   return (
-    <div className="app-wrapper">
+    <>
+      <Navbar />
 
-      <h1 className="text-display-xl">
-        Modern Product Experiences
-      </h1>
-
-      <p className="text-body-lg text-muted mt-4">
-        FACMP v2 establishes a structured design system built for scalable product delivery.
-      </p>
-
-      <h2 className="text-heading-lg mt-5">
-        Built with intention.
-      </h2>
-
-      <p className="text-body-md mt-3">
-        Utility-based typography ensures consistent rhythm and scalability across all pages.
-      </p>
-
-    </div>
-  )
+      <div className="app-wrapper container">
+        <h1 className="text-display-xl mt-5">
+          FACMP v2 Navbar Initialized
+        </h1>
+      </div>
+    </>
+  );
 }
 
-export default App
+export default App;
